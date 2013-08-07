@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Craigslist Categories are:</h1>
+  <p><% unless @categories.nil? || @categories.empty? %>
+     <% @categories.each do |name| %>  
+     <%= name.category %><br>
+     <% end %>
+     <% end %> 
+     </p>
+
+  <form action="/" method="get">
+    Let's get started: 
+    <br>
+    <input type="submit" value="Home!">
+  </form>
+</div>

@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Craigslist Listings for:</h1>
+
+ <form name="/" method="get">
+    <select name="cougar">
+      <% @categories.each do |name| %>
+        <option value="list"><%= name.category %></option>
+      <% end %>
+    <br><br><input type="submit" value="Submit">
+    </select>
+  </form>
+
+  <form action="/" method="get">
+    <br><br>
+    <input type="submit" value="Home!">
+  </form>
+</div>
+
+
+
+  
